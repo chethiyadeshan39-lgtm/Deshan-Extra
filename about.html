@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Deshan Extra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navigation (Same as index) -->
+    <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-300 py-4 px-6 md:px-12 bg-transparent glass">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-bolt text-purple-500"></i>
+                <span class="text-gradient">DESHAN EXTRA</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="index.html" class="nav-link hover:text-purple-400 transition">HOME</a>
+                <a href="about.html" class="nav-link active hover:text-purple-400 transition">ABOUT</a>
+                <a href="videos.html" class="nav-link hover:text-purple-400 transition">VIDEOS</a>
+                <a href="contact.html" class="nav-link hover:text-purple-400 transition">CONTACT</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] glass transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center md:hidden">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-3xl text-gray-400 hover:text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="flex flex-col space-y-8 text-2xl font-bold">
+            <a href="index.html" class="hover:text-purple-400 transition">HOME</a>
+            <a href="about.html" class="hover:text-purple-400 transition">ABOUT</a>
+            <a href="videos.html" class="hover:text-purple-400 transition">VIDEOS</a>
+            <a href="contact.html" class="hover:text-purple-400 transition">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-12 px-6 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-900/20 rounded-full blur-[100px] -z-10"></div>
+        <div class="max-w-7xl mx-auto text-center fade-up">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">THE STORY BEHIND <br/><span class="text-gradient">DESHAN EXTRA</span></h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">More than just gaming. A passion for technology, creativity, and building an epic community.</p>
+        </div>
+    </div>
+
+    <!-- About Content -->
+    <section class="py-12 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="relative fade-up">
+                <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-30"></div>
+                <img src="images/about.png" alt="Deshan Extra Studio" class="relative rounded-2xl w-full object-cover shadow-2xl border border-white/10">
+            </div>
+            
+            <div class="space-y-6 fade-up" style="transition-delay: 200ms;">
+                <h2 class="text-3xl font-bold text-white mb-6">Welcome to My World</h2>
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    Hey everyone, I'm Deshan. I created <strong>Deshan Extra</strong> to share my genuine passion for the digital world. What started as a small hobby of recording gameplay highlights has evolved into a full-scale operation dedicated to bringing you the highest quality entertainment.
+                </p>
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    Whether it's unboxing the latest sci-fi aesthetic tech gear, reviewing unreleased triple-A titles, or streaming intense competitive matches, my goal is to create content that feels premium and immersive.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6 pt-6">
+                    <div class="glass-card p-6 rounded-xl text-center border-l-4 border-l-purple-500">
+                        <div class="text-4xl font-bold text-white mb-2">500K+</div>
+                        <div class="text-sm text-gray-400 font-semibold uppercase tracking-wider">Subscribers</div>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl text-center border-l-4 border-l-pink-500">
+                        <div class="text-4xl font-bold text-white mb-2">50M+</div>
+                        <div class="text-sm text-gray-400 font-semibold uppercase tracking-wider">Total Views</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 glass py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <p class="text-gray-500 text-sm">© 2026 Deshan Extra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
